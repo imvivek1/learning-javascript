@@ -27,8 +27,43 @@
 // }
 
 // console.log(myObj);
-let MyFun=function()
-{
-  console.log("hello World");
+
+// let MyFun=function()
+// {
+//   console.log("hello World");
+// }
+// MyFun();
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//memory types:
+   //Stack(Primitive), Heap(Non-Primitive)
+     //in stack memory variable will be copied
+     //in heap momory variable you will get a refrence of original value
+
+//  let myname="vivek";
+//  let anotherName=myname;
+// anotherName="Anisul";
+
+
+//  console.log(myname);
+//  console.log(anotherName);//copy 
+
+
+let MyIdentity={
+  id:12345,
+  name:"vivek",
+  mail:"vivek@gmail.com",
+
 }
-MyFun();
+let MyIdentity2=MyIdentity;
+// console.table([MyIdentity2]);
+MyIdentity2.mail="vivek@google.com"
+//in heap beacuse of refrence value will also be changed not copy 
+//copy will be in stack
+console.table([MyIdentity2]);
+console.table(MyIdentity.mail);
+console.table(MyIdentity2.mail);
+//in both scenario output will be vivek@google.com because in heap due to refrence value will also be changed
+
