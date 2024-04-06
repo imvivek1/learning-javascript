@@ -5,7 +5,7 @@ let score="33abc";
 
 let valueInNumber=Number(score);
 // console.log(typeof valueInNumber);
-// console.log(valueInNumber);
+// console.log(valueInNumber); //output will be NaN because numebr is not there in variable 
 
 //"33"=>33
 //"33abc"=>NaN type will be number
