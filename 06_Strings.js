@@ -5,7 +5,7 @@ const repoCount=10;
 
 // console.log(`Hello my name is ${name} and my repo count is ${repoCount}`);//string interpolation
 
-const gameName= new String('vivekkr')
+const gameName= new String('vivek-kr')
 // console.log(gameName[0]);
 
 // console.log(gameName.__proto__);//emptyObject {}
@@ -26,3 +26,5 @@ const url="https://vivek.com/vivek%20kumar";//%20 means browser will automatical
 console.log(url.replace('%20','-'));
 
 console.log(url.includes('anisul'));// this function checks anisul is present in url or not
+
+console.log(gameName.split('-'));// this will split in -> [ 'vivek', 'kr' ]
