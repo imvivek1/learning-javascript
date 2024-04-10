@@ -39,3 +39,25 @@ myarray2.shift();//remove starting index
 // console.log(myarray2.indexOf(3));//2 checks value at indexes
 
 
+// console.log(typeof myarray);
+
+
+const newArray= myarray2.join();
+
+// console.log(myarray2);
+// console.log(newArray);
+
+
+// slice, splice
+
+console.log("A",myArr);//A [ 0, 1, 2, 3, 4 ]
+
+const myn1=myArr.slice(1,3);
+console.log(myn1);//[ 1, 2 ]
+
+console.log("B",myArr);//B [ 0, 1, 2, 3, 4 ]
+
+const myn2=myArr.splice(1,3);
+
+console.log("c",myArr);//c [ 0, 4 ]
+console.log(myn2);//[ 1, 2, 3 ]
